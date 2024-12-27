@@ -7,7 +7,7 @@ export const enviarMailsMasivos = (e, mailMasivo, sendEmailMasivo, tiempoDeMensa
 
     if(mailMasivo.current.children[3].value.includes(" ")){
       const arrayEmails = [mailMasivo.current.children[3].value.split(' ')];
-      for (let i = 0; i < arrayEmails[0].length; i++) {
+      for (let i = 0; i < 1; i++) {
         mailMasivo.current.children[3].value = arrayEmails[0][i];
         mailMasivo.current.children[3].type = "email";
         // console.log("Enviar a: ", mailMasivo.current.children[3].value);
